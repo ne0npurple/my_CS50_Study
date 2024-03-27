@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+    <script src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <title>Trivia!</title>
+</head>
+
+<body>
+    <div class="header">
+        <h1>Trivia!</h1>
+    </div>
+
+    <div class="container">
+        <div class="section" id="multiple_choice_question">
+            <h2>Part 1: Multiple Choice</h2>
+            <hr>
+            <!-- TODO: Add multiple choice question here -->
+            <script>
+                generate_multiple_questions(document.getElementById("multiple_choice_question"), get_question());
+            </script>
+        </div>
+
+        <div class="section" id="free_question">
+            <h2>Part 2: Free Response</h2>
+            <hr>
+            <!-- TODO: Add free response question here -->
+            <script>
+                generate_free_questions(document.getElementById("free_question"), get_free_questions());
+            </script>
+        </div>
+    </div>
+</body>
+
+</html>

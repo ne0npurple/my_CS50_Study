@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+    <script src="script.js"></script>
+    <title>Trivia!</title>
+    <script>
+            // TODO: Add code to check answers to questions
+    </script>
+</head>
+
+<body>
+    <div class="header">
+        <h1>Trivia!</h1>
+    </div>
+
+    <div class="container">
+        <div class="section">
+            <h2>Part 1: Multiple Choice </h2>
+            <hr>
+            <!-- TODO: Add multiple choice question here -->
+            <ol>
+                <h3><b>
+                        <li>
+                            CD-ROM stands for ...
+                            <div id="textFieldIncorrect" style="display: none;">
+                                Incorrect!
+                            </div>
+                            <div id="textFieldCorrect" style="display: none;">
+                                Correct!
+                            </div>
+                            <h4>
+                                <button onclick="displayText(this, 1)" class="text_option">Compactable Disc Read Only Memory</button>
+                                <button onclick="displayText(this, 1)" class="text_option">Compact Data Read Only Memory</button>
+                                <button onclick="displayText(this, 1)" class="text_option">Compactable Read Only Memory</button>
+                                <button onclick="displayText(this, 0)" class="text_option">Compact Disc Read Only Memory</button>
+                            </h4>
+                        </li>
+                        <li>
+                            ... has the shortest access times.
+                        </li>
+                    </b></h3>
+            </ol>
+
+        </div>
+
+        <div id="auto_generated">
+            <h2>Part 2: Free Response</h2>
+            <hr>
+            <!-- TODO: Add free response question here -->
+        </div>
+    </div>
+</body>
+
+<script>
+    generate_questions(document.getElementById("auto_generated"), get_question());
+</script>
+
+</html>

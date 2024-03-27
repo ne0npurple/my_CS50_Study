@@ -1,0 +1,23 @@
+CASE1:
+
+Gets all the tv shows which is starred by an actor named Steve Carell.
+
+    basically as we can see in the database structure, stars and writers are put in the same big table named "people", 
+    and divided again in another table named "stars" and "writers" where each person is then identified using person_id.
+
+    1. Using query to get the data:
+
+        - first, get the id of specified person search by the name:
+            SELECT id FROM people WHERE name="Steve Carell";
+        
+        - second, gets the show_id where the person_id is == to the one we wanted, this time the person name is Steve Carell:
+            SELECT show_id FROM stars WHERE person_id = (SELECT id FROM people WHERE name="Steve Carell");
+
+        - gets the title from table shows where all the movies are starred by Steve Carell:
+            SELECT title FROM shows WHERE id IN (SELECT show_id FROM stars WHERE person_id = (SELECT id FROM people WHERE name="Steve Carell"));
+
+    2. Use JOIN to get the data:
+
+        SELECT title FROM people JOIN stars ON people.id=stars.person_id JOIN shows ON stars.show_id=shows.id WHERE name="Steve Carell";
+
+        --> we can add another condition to order the title by adding "order by title"

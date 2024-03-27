@@ -1,0 +1,49 @@
+.navbar {
+    /* color: black; */
+    background-color: #93CAED;
+    font-weight: bold;
+}
+
+a:hover {
+    background-color: #dddddd;
+}
+
+.fa {
+    color: black;
+}
+
+#footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 2.5rem;
+    /* Footer height */
+    text-align: center;
+    color: #93CAED;
+}
+
+.mydiv {
+    margin: auto;
+    margin-top: 15%;
+    width: 50%;
+    height: fit-content;
+    padding: 20px;
+    border-style: dotted;
+    text-align: center;
+    color: #93CAED;
+}
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 15px;
+    color: dimgrey;
+}
+
+td,
+th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}

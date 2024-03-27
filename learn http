@@ -1,0 +1,29 @@
+curl -X GET --header 'Accept: application/json' 'https://lasttransaction-bs-go-preprod-esb.ocp.digitalcore.telkomsel.co.id/esb/v1/service/last-transaction?transaction_id=A006180625175306384760520&channel=i1&service_id=6282282171770' -vik
+
+
+GET /esb/v1/service/last-transaction?transaction_id=A006180625175306384760520&channel=i1&service_id=6282282171770 HTTP/1.1
+Host: lasttransaction-bs-go-preprod-esb.ocp.digitalcore.telkomsel.co.id
+User-Agent: curl/7.68.0
+Accept: application/json
+
+
+curl -X PUT --header 'Content-Type: application/json' --header 'Accept: application/json' -d '{"transaction": { "transaction_id": "C002200323122912160000000", "channel": "k4" }, "service": { "service_id": "08119940356" }, "method": "SetResourcePendingToActive"}' 'https://paradiseservice-bs-prod-preprod-esb.ocp2.digitalcore.telkomsel.co.id/esb/v1/service/resource/status' -vik
+
+PUT /esb/v1/service/resource/status HTTP/1.1
+Host: paradiseservice-bs-prod-preprod-esb.ocp2.digitalcore.telkomsel.co.id
+User-Agent: curl/7.68.0
+Content-Length: 191
+Accept: application/json
+Content-Type: application/json
+
+{
+  "transaction": {
+    "transaction_id": "C002200323122912160000000",
+    "channel": "k4"
+  },
+  "service": {
+    "service_id": "08119940356"
+  },
+  "method": "SetResourcePendingToActive"
+}
+

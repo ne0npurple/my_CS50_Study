@@ -1,0 +1,22 @@
+{% extends "layout.html" %}
+
+{% block body %}
+<div class="container">
+    <div class="section">
+        <h2>Edit Birthday</h2>
+        {% for row in data %}
+        <form action="/edit" method="post">
+            <input type="hidden" value="{{ row.id }}" name="id">
+            <label for="name">Name</label>
+            <input value="{{ row.name }}" name="name">
+            <label for="month"> Month</label>
+            <input value="{{ row.month }}" name="month">
+            <label for="day">Day</label>
+            <input value="{{ row.day }}" name="day">
+            <button type="submit" style="background-color:dodgerblue; color:white">Update</button>
+        </form>
+        {% endfor %}
+    </div>
+</div>
+
+{% endblock %}

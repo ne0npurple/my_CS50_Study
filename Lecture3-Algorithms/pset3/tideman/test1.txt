@@ -1,0 +1,13 @@
+4
+alice
+charlie
+bob
+alice
+charlie
+bob
+charlie
+alice
+bob
+bob
+alice
+charlie

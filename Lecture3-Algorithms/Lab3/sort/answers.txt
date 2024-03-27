@@ -1,0 +1,11 @@
+sort1 uses: Bubble Sort Algorithm
+
+How do you know?: Tested using the file sorted50000.txt, the runtime is the fastest compared to other algorithms. In a sorted array, the best case for bubble sort is big O(n). Tested using random10000.txt, this algorithm is the slowest.
+
+sort2 uses: Merge Sort Algorithm
+
+How do you know?: The runtime of the sort1 progam is the fastest one when tested using random10000.txt compared to the other sorting algorithms.
+
+sort3 uses: Selection Sort Algorithm
+
+How do you know?: Tested using file random5000.txt and reversed5000.txt shown that the running is almost the same. Tested using a sorted array, this algorithm is the slowest among the other sorting algorithms.

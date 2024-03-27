@@ -1,0 +1,43 @@
+.container {
+    background-color: 	#f9f9f9;
+}
+
+#icons, #icons:hover {
+    color: #333538;
+    margin-right: 10px;
+}
+
+/* #icons:hover {
+    color: #333538;
+} */
+
+#column_socials {
+    float: left;
+    width: 25%;
+}
+
+#column_menu {
+    width: 50%;
+    float: center;
+}
+
+#menu {
+    font-family: 'Glacial Indifference', sans-serif;
+    font-size: larger;
+    color: #333538;
+    text-decoration:none;
+    margin-right: 20px;
+}
+
+#menu:hover {
+    color: #C34A51;
+}
+
+#column_search {
+    float: right;
+    width: 25%;
+}
+
+/* #container_menu {
+    margin-top: 15px;
+} */

@@ -1,0 +1,2 @@
+If audio aura determined by the average of energy, valence and danceability, a low valence might means negative feelings such as sad or angry, a high valence might means happy or cheerful. A low and high energy might means the same as for valence. Meanwhile, a low danceability means the rhythm and the beat of a music is slow which is not suitable for dancing, a high value means the opposite.
+

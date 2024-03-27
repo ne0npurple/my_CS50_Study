@@ -1,0 +1,12 @@
+<!-- hi flask, this file extends whatever inside layout.html -->
+{% extends "layout.html" %}
+
+<!-- this is the block body to put inside the body -->
+{% block body %}
+
+<form action="/greet" method="post">
+    <input autocomplete="off" autofocus name="name" placeholder="Name" required type="text">
+    <input type="submit">
+</form>
+
+{% endblock %}
